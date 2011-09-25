@@ -1,4 +1,4 @@
-require 'lib/spree/i18n_utils'
+require 'spree/i18n_utils'
 
 include Spree::I18nUtils
 
@@ -78,7 +78,7 @@ def get_translation_keys(gem_name)
 end
 
 # Returns a composite hash of all relevant translation keys from each of the gems
-def composite_keys 
+def composite_keys
   api_keys = get_translation_keys "spree_api"
   auth_keys = get_translation_keys "spree_auth"
   core_keys = get_translation_keys "spree_core"
